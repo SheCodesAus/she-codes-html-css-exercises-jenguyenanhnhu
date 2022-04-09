@@ -13,6 +13,12 @@ body {
     font-size: 1rem;
     font-weight: bold;
     height: calc(100% - 14px);
+    display: flex;
+    /* horizontal alignment */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    /* vertical alignment */
 }
 
 div {
@@ -20,4 +26,22 @@ div {
     background-color: #FDA103;
 }
 
+.demo-div {
+    flex-grow: 1;
+}
+
+#div-6 {
+    flex-grow: 2;
+    order: 1;
+}
+
+#div-1 {
+    flex-basis: 100%;
+    order: 2;
+}
+
+#div-2 {
+    flex-basis: 50px;
+    order: 3;
+}
 /*** Your code here ***/

@@ -29,4 +29,22 @@ div {
     background-color: #f5deb3;
 }
 
+@media (min-width: 500px) {
+    div {
+        display: inline-block;
+        font-size: 50px;
+        width: 44%;
+        height: 150%;
+    }
+}
+
+@media (min-width: 900px) {
+    div {
+        display: inline-block;
+        width: 23%;
+        height: 300%;
+        font-size: 75px;
+    }
+    #div-1, #div-2, #div-3, #div-4 {background-color: #9370db;}
+}
 /*** Your code here ***/

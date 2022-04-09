@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
@@ -12,20 +12,28 @@ header {
 }
 
 h2 {
+    margin: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background-color: #5e7992;
     color: #fff;
+    padding: 20px;
+    text-align: center;
     font-size: 1rem;
 }
 
 p {
+    display: block;
 }
 
 form {
     background-color: #fff;
+    padding: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+#form-wrapper {
 }
 
 label {
@@ -37,15 +45,24 @@ input {
     box-sizing: border-box;
     border: 1px solid #ebeeef;
     background-color: #f9fafa;
+    display: block;
+    padding: 5px;
+    width: 100%;
 }
 
 .form-item {
+    margin: 20px 0;
 }
 
+#form-wrapper {
+    background-color: white;
+}
 button {
     background-color: #00d982;
     border: none;
     color: #fff;
+    width: 100%;
+    padding: 15px;
 }
 
 input,
@@ -54,3 +71,22 @@ button {
     border-radius: 2px;
 }
 
+@media (min-width: 600px) {
+    .row .form-item {
+        display: inline-block;
+        width: calc(50% - 5px);
+    }
+}
+
+@media (min-width: 900px) {
+    #form-wrapper {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc (50% - 25px)
+        margin: 10px;
+        }
+
+    main {
+        text-align: center;
+    }
+}
